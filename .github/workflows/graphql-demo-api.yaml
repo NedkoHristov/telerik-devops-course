@@ -47,5 +47,5 @@ jobs:
 
       - name: Push to repository
         run: |
-          docker login --username sthristov --password ${{ secrets.DOCKER_HUB_PASSWORD }}
+          docker login --username nedko --password ${{ secrets.DOCKER_HUB_PASSWORD }}
           docker image push --all-tags $DOCKER_HUB_REPO
